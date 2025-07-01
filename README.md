@@ -158,6 +158,36 @@ Selected for its:
   - OpenAI Gym 0.26+
   - Stable Baselines3 (for PPO implementation)
 
+
+# Reinforcement Learning Modular Framework
+
+## 🚀 Key Features Implemented
+
+### 🧱 Modular Architecture
+- Clear separation of concerns:
+  - **RL Agent**
+  - **Environment**
+  - **Monitoring**
+- Type hints throughout for better maintainability
+- Configuration management for flexible experimentation
+
+### ⚙️ Production-Ready Components
+- Custom **Gym environment** tailored for RL training
+- **PPO** algorithm implementation via [Stable Baselines3](https://github.com/DLR-RM/stable-baselines3)
+- **Priority-based reward system** to guide agent learning
+- **Capacity-aware action scaling** for more realistic interactions
+
+### 📈 Monitoring Integration
+- Built-in **metrics collection system**
+- **Service profiling** using priority levels
+- **Queue tracking** and **error rate monitoring**
+
+### ✅ Testing Support
+- Structured **unit tests**
+- **Integration test** examples
+- Easily **mockable components** for isolated testing
+
+
 ### Installation
 
 ```bash
@@ -207,4 +237,4 @@ Please adhere to our:
 
 ## License
 
-Distributed under the MIT License. See `LICENSE` for complete terms.
+Distributed under the GPL-3.0 license. See `LICENSE` for complete terms.
