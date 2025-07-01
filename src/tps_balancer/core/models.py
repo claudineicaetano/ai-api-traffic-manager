@@ -1,11 +1,12 @@
+from enum import Enum, auto
 from dataclasses import dataclass
-from enum import Enum
+from typing import Optional
 
 class PriorityLevel(Enum):
-    CRITICAL = 4
-    HIGH = 3
-    MEDIUM = 2
-    LOW = 1
+    CRITICAL = auto()
+    HIGH = auto()
+    MEDIUM = auto()
+    LOW = auto()
 
 @dataclass
 class ServiceProfile:
@@ -15,3 +16,4 @@ class ServiceProfile:
     tps_limit: float = 0.0
     queue_size: int = 0
     error_rate: float = 0.0
+    last_updated: Optional[float] = None
