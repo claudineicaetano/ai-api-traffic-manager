@@ -1,0 +1,36 @@
+# config.yaml
+
+# List of monitored services and their priorities
+services:
+  - id: "service_a"
+    priority: "HIGH"
+  - id: "service_b"
+    priority: "MEDIUM"
+  - id: "service_c"
+    priority: "LOW"
+
+# Maximum TPS allowed by the external API
+max_api_tps: 1000
+
+# Enables or disables training mode for the agent
+train: true
+
+# Number of training episodes (valid if train = true)
+training_episodes: 5000
+
+# Reinforcement Learning agent settings (optional, if supported)
+agent_config:
+  learning_rate: 0.01
+  gamma: 0.95
+  epsilon_start: 1.0
+  epsilon_min: 0.01
+  epsilon_decay: 0.995
+
+# Execution interval (time between decisions, in seconds)
+decision_interval: 1.0
+
+# Logging settings
+logging:
+  level: "INFO"
+  file: "logs/tps_controller.log"
+  console: true
