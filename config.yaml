@@ -1,4 +1,4 @@
-# config.yaml
+# Configuration file for the TPS Controller Agent
 
 # List of monitored services and their priorities
 services:

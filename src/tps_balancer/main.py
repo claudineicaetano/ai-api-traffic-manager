@@ -1,8 +1,8 @@
 import logging
-from .utils.logger import setup_logging
-from .utils.config import load_config
-from .core.controller import TPSController
-from .core.models import ServiceProfile, PriorityLevel
+from tps_balancer.utils.config import load_config
+from tps_balancer.utils.logger import setup_logging
+from tps_balancer.core.controller import TPSController
+from tps_balancer.core.models import ServiceProfile, PriorityLevel
 
 def main():
     setup_logging()
