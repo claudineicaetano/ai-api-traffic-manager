@@ -2,6 +2,7 @@ import gym
 from gym import spaces
 import numpy as np
 from typing import Dict, List, Tuple
+from ..core.models import PriorityLevel
 from tps_balancer.env.simulator import APISimulator
 from ..core.models import ServiceProfile
 

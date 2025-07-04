@@ -1,6 +1,6 @@
 import pytest
-from ..core.models import ServiceProfile, PriorityLevel
-from ..env.api_env import APIEnv
+from tps_balancer.core.models import ServiceProfile, PriorityLevel
+from tps_balancer.env.api_env import APIEnv
 
 @pytest.fixture
 def test_services():
