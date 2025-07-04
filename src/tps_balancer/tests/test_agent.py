@@ -1,6 +1,6 @@
 import pytest
 import numpy as np
-from ..core.agent import TPSTuningAgent
+from tps_balancer.core.agent import TPSTuningAgent
 
 def test_agent_initialization():
     agent = TPSTuningAgent({})

@@ -2,7 +2,7 @@ import yaml
 from tps_balancer import TPSController, ServiceProfile, PriorityLevel
 
 # Load configuration
-with open("config.yml", "r") as f:
+with open("config.yaml", "r") as f:
     config = yaml.safe_load(f)
 
 # Initialize services
